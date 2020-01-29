@@ -1,18 +1,38 @@
 {
-    "name": "express-HelloWorld",
-    "description": "Hello World ExpressJS WebService",
-    "version": "0.0.1",
-    "private": true,
-    "dependencies": {
-        "express": "4.16.2"
-    },
-    "devDependencies": {
-        "mocha": "5.0.0",
-        "unit.js": "2.0.0",
-        "supertest": "3.0.0"
-    },
-    "scripts": {
-        "start": "node server.js",
-        "test": "mocha --recursive tests --exit"
-    }
+  "name": "cognito-demo-service",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Example Express based REST API in Node.js for my medium.com article on using the AWS Cognito provided JWT tokens. Demonstrates downloading of the Cognito JWKS certificates and use of a JWT decoder to verify the claims in a JWT token, wrapped up in a reusable Express middleware function.",
+  "homepage": "https://cognito-demo.arronharden.com",  
+  "author": {
+    "name": "Arron Harden",
+    "email": "post@arronharden.com",
+    "url": "https://arronharden.com"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/arronharden/cognito-demo-service"
+  },
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.1",
+    "morgan": "~1.9.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
 }
