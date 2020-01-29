@@ -1,14 +1,14 @@
 {
-    "region": "eu-west-2",
-    "userPool": "eu-west-2_z1Go5XdrZ",
-    "userPoolBaseUri": "https://auth-cognito-demo.arronharden.com",
-    "clientId": "4tnp4k64d5v4ah9dud3pj1kbs0",
-    "callbackUri": "https://cognito-demo.arronharden.com/callback",
-    "signoutUri": "https://cognito-demo.arronharden.com",
+    "region": "eu-east-1",
+    "userPool": "us-east-1_zHHpabpBj",
+    "userPoolBaseUri": "https://auth-cognito-demo.ince.ist",
+    "clientId": "10fk8o8bqevbrmum4pin679me1",
+    "callbackUri": "https://cognito-demo.ince.ist/callback",
+    "signoutUri": "https://cognito-demo.ince.ist",
     "tokenScopes": [
         "openid",
         "email",
         "profile",
-        "https://cognito-demo-api.arronharden.com/hello-world.all"                
+        "https://cognito-demo-api.ince.ist/hello-world.all"                
     ]
 }
