@@ -1,5 +1,5 @@
 {
-    "region": "eu-east-1",
+    "region": "us-east-1",
     "userPool": "us-east-1_zHHpabpBj",
     "userPoolBaseUri": "https://auth-cognito-demo.ince.ist",
     "clientId": "10fk8o8bqevbrmum4pin679me1",
