@@ -11,12 +11,12 @@ const appConfig = require('./config/app-config.json')
 var app = express()
 
 // Configure CORS for this service so our UI can make calls to us.
-var corsOptions = {
-  origin: [appConfig.signoutUri]
-}
-app.use(cors())
-app.options('/users', cors())
-//app.options('*', cors())
+// var corsOptions = {
+//   origin: [appConfig.signoutUri]
+// }
+// app.use(cors())
+// app.options('/users', cors())
+// app.options('*', cors())
 
 app.use(logger('dev'))
 app.use(express.json())
