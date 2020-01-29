@@ -14,7 +14,8 @@ var app = express()
 var corsOptions = {
   origin: [appConfig.signoutUri]
 }
-app.use(cors(corsOptions))
+//app.use(cors(corsOptions))
+app.options('*', cors())
 
 app.use(logger('dev'))
 app.use(express.json())
