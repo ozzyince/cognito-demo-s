@@ -3,6 +3,13 @@ var router = express.Router()
 var cors = require('cors')
 
 /* GET users listing. */
+router.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header('Access-Control-Allow-Credentials', true)
+  res.header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS')
+  res.header('Access-Control-Allow-Headers', 'Authorization, Origin, X-Requested-With, Content-Type, Accept')
+  next()
+})
 router.all('*', cors());
 router.options('*', cors())
 router.get('/', function (req, res, next) {
